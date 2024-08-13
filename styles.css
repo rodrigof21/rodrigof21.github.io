@@ -4,6 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    /*overflow: hidden; /*Hide Scrollbars*/
 }
 
 .navbar {
@@ -173,4 +174,59 @@ body {
     .card {
     margin-bottom: 15px; /* Add spacing between cards */
     }   
+}
+
+#sidebar.hidden {
+    display: none;
+}
+#content.full-width {
+    width: 100%;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+  
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbars for WebKit browsers */
+.element {
+    overflow: -moz-scrollbars-none; /* Firefox (older versions) */
+    overflow: scroll; /* Enable scrolling */
+}
+  
+  /* Hide scrollbars for WebKit browsers */
+.element::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+  
+  /* Hide scrollbars for all other browsers */
+.element {
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+ /* Hide scrollbar but allow scrolling */
+ html, body {
+    overflow: auto;  /* Allow scrolling */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+/* Internet Explorer and old Edge */
+html {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and old Edge */
+}
+
+/* Example content to make page scrollable */
+.content {
+    height: 200vh; /* Double the viewport height to enable scrolling */
 }

@@ -71,3 +71,23 @@ body {
     text-align: center;
     width: 100%;
 }
+
+ /* Hide scrollbar but allow scrolling */
+html, body {
+    overflow: auto;  /* Allow scrolling */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+html::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar in Webkit browsers (Chrome, Safari) */
+}
+
+/* Internet Explorer and old Edge */
+html {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and old Edge */
+}
+
+/* Example content to make page scrollable */
+.content {
+    height: 200vh; /* Double the viewport height to enable scrolling */
+}
