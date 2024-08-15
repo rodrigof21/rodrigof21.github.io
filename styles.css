@@ -250,3 +250,35 @@ html {
 .content {
     height: 200vh; /* Double the viewport height to enable scrolling */
 }
+
+.scroll-down {
+    position: absolute;
+    display: inline-block;
+    margin-top: 20em;
+    color: #00aaff; /* Matching the button color */
+    font-size: 2rem;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s; /* Same animation as the button */
+    opacity: 0;
+    text-decoration: none;
+}
+
+.scroll-down:hover {
+    color: #0077cc; /* Darker blue on hover */
+}
+
+.scroll-down i {
+    animation: bounce 2s infinite; /* Bouncing animation for the arrow */
+}
+
+/* Bouncing animation for the arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
